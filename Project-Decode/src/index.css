@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F2F0EA;
+}
+
+/* Button hover */
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+  transition: all 0.2s ease;
+}
+
+/* Navbar links hover */
+nav a:hover {
+  color: #F2F0EA !important;
+  border-bottom: 2px solid white;
+  transition: all 0.2s ease;
+}
+
+/* Package cards hover */
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+/* Tablet */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2rem !important;
+  }
+
+  .packages-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block !important;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+}
+img {
+  loading: lazy;
+}
